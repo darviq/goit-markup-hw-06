@@ -20,9 +20,7 @@
 
         <ul class="nav-list list">
           <li class="item"><a class="link active" href="./index.html">Студия</a></li>
-          <li class="item">
-            <a class="link" href="./portfolio.html">Портфолио</a>
-          </li>
+          <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
           <li class="item"><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
@@ -297,6 +295,55 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
+        <h2>Оставьте свои данные, мы вам перезвоним</h2>
+
+        <form class="callback-form">
+
+          <label class="label-input">
+            <span>Имя</span>
+            <div class="icon-container">
+              <input class="input" type="text" name="name">
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="label-input">
+            <span>Телефон</span>
+            <div class="icon-container">
+              <input class="input" type="tel" name="tel">
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="label-input">
+            <span>Почта</span>
+            <div class="icon-container">
+              <input class="input" type="email" name="email">
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="label-comment">
+            <span>Комментарий</span>
+            <textarea class="comment" name="comment" placeholder="Введите текст"></textarea>
+          </label>
+
+          <label class="label-check">
+            <input class="checkbox" type="checkbox" name="checkbox">
+            <span class="mark"></span>
+            <span>Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия договора</a></span>
+          </label>
+
+          <button class="submit-button" type="submit">Отправить</button>
+
+        </form>
+
         <button class="close-button" type="button" data-modal-close>
           <svg>
             <use href="./images/sprite.svg#icon-close"></use>
@@ -317,6 +364,7 @@
           <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
       </div>
+
       <div class="sub-container social">
         <p class="text">Присоединяйтесь</p>
         <ul class="list link-list">
@@ -349,6 +397,14 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <div class="sub-container subscription">
+        <p class="text">Подпишитесь на рассылку</p>
+        <form class="subscription-form">
+          <input type="email" name="email" placeholder="E-mail" required>
+          <button type="submit">Подписаться</button>
+        </form>
       </div>
     </div>
   </footer>
