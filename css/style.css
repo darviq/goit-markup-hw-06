@@ -520,8 +520,6 @@ img {
 }
 
 .callback-form .label-check {
-  display: flex;
-  align-items: center;
   margin: 0 auto 30px;
 }
 
@@ -536,8 +534,10 @@ img {
   overflow: hidden;
 }
 
-.label-check .mark {
+.label-check .mark::before {
   display: inline-block;
+  vertical-align: middle;
+  content: "";
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -545,11 +545,9 @@ img {
   margin-right: 7px;
 }
 
-.label-check .checkbox:checked + .mark {
+.label-check .checkbox:checked + .mark::before {
   border: none;
   background-image: url(../images/check.svg);
-  background-size: contain;
-  background-origin: border-box;
 }
 
 .label-check .policy-link {
@@ -569,8 +567,6 @@ img {
 }
 
 .callback-form .submit-button {
-  /* width: 200px;
-  height: 50px; */
   padding: 10px 55px;
 
   margin-left: auto;
